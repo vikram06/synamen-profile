@@ -329,6 +329,16 @@
 				});
 			});
 </script/>
+$( "body" ).on( "keydown", function( e ) {
+				var code = e.keyCode;
+				if( code == 39 ) {
+				_self._navigate('prev');
+				}
+				if( code == 37 ) {
+				_self._navigate('next');
+				}
+				
+			});
 <!--			
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div>
